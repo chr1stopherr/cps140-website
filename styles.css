@@ -1,12 +1,12 @@
  :root{
- --primary-color:rgb(240, 8, 8);
+ --primary-color:rgb(255, 0, 0);
  --secondary-color:#000000;
  --text-color: rgb(255, 255, 255);
 }
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   color: var(--text-color);
   background-color: var(--secondary-color);
 }
@@ -46,5 +46,6 @@ main {
 
 h1 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 150%;
+  color: red;
 }
