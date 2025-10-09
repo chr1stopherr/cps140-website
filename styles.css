@@ -20,18 +20,19 @@ nav {
   justify-content: center;
   padding: 0.5rem;
   gap: 0.5rem;
-  border-bottom: solid 1px var(--primary-color);
+  border-bottom: solid 1px var(--secondary-color);
   background-color: var(--primary-color);
 }
 
 nav a {
   display: inline-block;
   min-width: 9rem;
-  padding: 0.5rem;
+  padding: 1.0rem;
   border-radius: 0.2rem;
-  border: solid 1px var(--secondary-color);
+  border: solid 1px var(--primary-color);
   text-align: center;
   text-decoration: none;
+  background-color: #ffffff;
   color:var(--secondary-color);
 }
 
@@ -48,4 +49,18 @@ h1 {
   font-weight: bold;
   font-size: 150%;
   color: red;
+}
+
+.child {
+  border: solid 1px red;
+  padding: 1rem;
+}
+.parent {
+  display: flex;
+  width: 80;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
 }
