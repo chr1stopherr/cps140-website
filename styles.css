@@ -9,21 +9,6 @@ body {
   font-family: 'Courier New', Courier, monospace;
   color: var(--text-color);
   background-color: var(--secondary-color);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-body.first-page {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuOMcDAtS2NtjUpZPGkJMCGYBXQhpwy0-O7g&s");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-body.second-page {
-  background-color: #000000;
-  background-image: none;
 }
 
 nav {
@@ -66,10 +51,9 @@ nav a:hover {
 main {
   padding: 1rem;
   text-align: center;
-  backdrop-filter: blur(6px);
-  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   margin: 1rem;
+  background-color: var(--secondary-color); 
 }
 
 h1 {
@@ -120,12 +104,6 @@ h1 {
   cursor: pointer;
 }
 
-body.first-page .child {
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(2px);
-}
-
 .brand-link {
   margin-top: 2rem;
 }
@@ -133,7 +111,7 @@ body.first-page .child {
 .brand-link a {
   color: var(--primary-color);
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .brand-link a:hover {
