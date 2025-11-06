@@ -1,4 +1,5 @@
 :root {
+  --background-image: url(images/red.jpg);
   --primary-color: rgb(255, 0, 0);
   --secondary-color: #000000;
   --text-color: rgb(255, 255, 255);
@@ -9,6 +10,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   color: var(--text-color);
   background-color: var(--secondary-color);
+  background-image: var(--background-image);
 }
 
 nav {
@@ -53,7 +55,6 @@ main {
   text-align: center;
   border-radius: 10px;
   margin: 1rem;
-  background-color: var(--secondary-color);
 }
 
 h1 {
@@ -120,5 +121,5 @@ h1 {
 .footer {
   display: flex;
   padding: 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color);;
 }
