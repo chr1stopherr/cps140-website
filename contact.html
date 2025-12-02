@@ -16,7 +16,34 @@
       <a href="./contact.html" aria-current="page">Contact Us</a>
       <a href="./info.html">Refund Policy</a>
     </nav>
-    <form name="MyForm">
-      <input type="text">
-      <input type="submit">
+    <form name="myform" class="formStyle">
+      <div class="inputRow">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+    
+      <div class="inputRow">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+    
+      <div class="inputRow">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+    
+      <div class="inputRow">
+        <label for="concern">Concern/Message:</label>
+        <input type="text" id="concern" name="concern" required>
+      </div>
+    
+      <div class="inputRow">
+        <input type="submit" name="submit" onclick="formSubmission()">
+        <script>
+          function formSubmission() {
+            alert("The form was successfully submitted! Thank you for reaching out!");
+          }
+        </script>
+      </div>
     </form>
+    
