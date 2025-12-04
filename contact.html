@@ -41,7 +41,11 @@
         <input type="submit" name="submit" onclick="formSubmission()">
         <script>
           function formSubmission() {
-            alert("The form was successfully submitted! Thank you for reaching out!");
+            const myform ="this is a string"
+            console.log(myform)
+            const name =document.getElementById("name").value
+            console.log(name);
+            alert("Thank you for submitting " + name);
           }
         </script>
       </div>
