@@ -1,19 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    <title>Contact</title>
-    <meta charset="UTF-8" />
-    
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Refund Policy — LifeOfErrors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-  <body>
-    <nav>
-      <a href="/index.html">LifeOfErrors</a>
-      <a href="./page2.html">11bylifeoferrors</a>
-      <a href="./contact.html">Contact Us</a>
-      <a href="./info.html" aria-current="page">Refund Policy</a>
-    </nav>
-   
+<body>
+  <nav>
+    <a href="/index.html">LifeOfErrors</a>
+    <a href="./page2.html">11bylifeoferrors</a>
+    <a href="./contact.html">Contact Us</a>
+    <a href="./info.html" aria-current="page">Refund Policy</a>
+  </nav>
+
+  <main>
+    <h1>Refund Policy</h1>
+    <div class="policy-grid">
+
+      <div class="policy-box">
+        <h2>Refunds | Exchanges</h2>
+        <p>All sales are final. If an error was made on our end, you may be eligible for a refund or exchange.</p>
+        <p>Contact us at: <b>lifeoferrorsbrnd@gmail.com</b></p>
+        <p>Claims made after 3 days of receiving your item will not be considered.</p>
+      </div>
+
+      <div class="policy-box">
+        <h2>Damages | Issues</h2>
+        <p>Please inspect your order upon arrival and contact us right away if it's defective, damaged, or incorrect.</p>
+        <p>Damages reported after 3 days will be considered the customer’s responsibility.</p>
+      </div>
+
+      <div class="policy-box">
+        <h2>Exchanges</h2>
+        <p>The fastest way to get the item you want is to return the item you have. Once we accept the return, you can make a separate purchase for the new item.</p>
+        <p>Sale items and gift cards cannot be returned.</p>
+      </div>
+
+      <div class="policy-box">
+        <h2>EU 14-Day Cooling-Off Period</h2>
+        <p>If your order ships to the EU, you may cancel or return it within 14 days for any reason.</p>
+        <p>Items must be unused, unworn, with tags, and in original packaging.</p>
+        <p>A receipt or proof of purchase is required.</p>
+      </div>
+
+      <div class="policy-box">
+        <h2>Refund Processing</h2>
+        <p>Once we receive and inspect your return, we will notify you if your refund is approved.</p>
+        <p>If approved, refunds process within 10 business days to your original payment method.</p>
+        <p>If more than 15 business days have passed after approval, contact us at <b>lifeoferrorsbrnd@gmail.com</b>.</p>
+      </div>
+      <label>
+        Light Mode
+        <input type="checkbox" onchange="togglelightMode()">
+      </label>
+      <script>
+        let lightMode = false;
+  
+        function togglelightMode() {
+          console.log("Light mode initially is" + lightMode)
+          if (lightMode == true) {
+            // Turn off light mode
+            lightMode = false;
+            document.body.style["backgroundColor"] = "#000000";
+            document.body.style["color"] = "#FFFFFF"
+          } else {
+            // Turn on light mode
+            lightMode = true;
+            document.body.style["backgroundColor"] = "#FFFFFF";
+            document.body.style["color"] = "#000000"
+          }
+          console.log("Light mode has been changed to" + lightMode)
+        }
+      </script>
+    </div>
+  </main>
+</body>
+</html>

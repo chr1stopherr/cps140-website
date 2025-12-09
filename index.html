@@ -56,6 +56,29 @@
         <a href="https://lifeoferrors.com/" target="_blank">lifeoferrors.com</a>
       </p>
     </main>
+    <label>
+      Light Mode
+      <input type="checkbox" onchange="togglelightMode()">
+    </label>
+    <script>
+      let lightMode = false;
+
+      function togglelightMode() {
+        console.log("Light mode initially is" + lightMode)
+        if (lightMode == true) {
+          // Turn off light mode
+          lightMode = false;
+          document.body.style["backgroundColor"] = "#000000";
+          document.body.style["color"] = "#FFFFFF"
+        } else {
+          // Turn on light mode
+          lightMode = true;
+          document.body.style["backgroundColor"] = "#FFFFFF";
+          document.body.style["color"] = "#000000"
+        }
+        console.log("Light mode has been changed to" + lightMode)
+      }
+    </script>
   </body>
   <div class="footer">
     Contact Us

@@ -1,5 +1,4 @@
 :root {
-  --background-image: url(images/red.jpg);
   --primary-color: rgb(255, 0, 0);
   --secondary-color: #000000;
   --text-color: rgb(255, 255, 255);
@@ -10,7 +9,6 @@ body {
   font-family: "Courier New", Courier, monospace;
   color: var(--text-color);
   background-color: var(--secondary-color);
-  background-image: var(--background-image);
 }
 
 nav {
